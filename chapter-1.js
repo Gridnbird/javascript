@@ -22,10 +22,10 @@ console.log('Да, убери же ты их наконец!!!');
 
 console.log('/*Значение*/', typeof('/*Значение*/'));
 // '/*Значение*/' заменяем на необходимое значение определенного типа данных.
-console.log(7, typeof (7);
+console.log(7, typeof 7);
 console.log('cycle', typeof('cycle'));
 console.log(true, typeof(true));
-console.log( , typeof(null));
+console.log('null', typeof(null));
 console.log(undeclaredVariable, typeof(undeclaredVariable));
 
 // Задание к уроку 1.1.5
@@ -51,14 +51,14 @@ console.log('Hello ' + 'Smartians');
 //
 // – посчитайте длину строки 'Share your knowledge', результат выведите в консоль.
 console.log('Share your knowledge'.length);
-console.log(length); // ответ 20
+
 
 // Задание к уроку 1.1.8
 // –– приведите строку ‘My name is’ + ‘Your name’ к UpperCase (все буквы большие);
 // –– учимся гуглить, на сайте https://developer.mozilla.org/ находим метод объекта String,
 // который удаляет лишние пробелы из строки ‘     I love study JS on Smartians platform    ’.
 console.log(‘My name is’ + ‘Your name’.toUpperCase());
-String.prototype.trim(‘     I love study JS on Smartians platform    ’);
+console.log(‘     I love study JS on Smartians platform    ’.trim());
 /* Или так?
 var orig = ‘     I love study JS on Smartians platform    ’;
 console.log(orig.trim());
@@ -69,8 +69,8 @@ console.log(orig.trim());
 // –– найдите подходящий метод у объекта Math, который вернет наименьшее целое число, большее или равное полученному выше числу.
 // –– с помощью совйства у объекта Number, проверте что ваше полученное число –– целое.
 console.log(Math.random()*200);
-Math.floor(Math.random()*200));
-Number.isInteger(Math.floor(Math.random()*200));)
+console.log(Math.floor(Math.random()*200));
+console.log(Number.isInteger(Math.floor(Math.random()*200)));
 
 // Задание к уроку 1.2.2.
 // –– Объявите переменную myFood со значением 'sushi';
