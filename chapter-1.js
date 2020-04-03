@@ -57,8 +57,8 @@ console.log('Share your knowledge'.length);
 // –– приведите строку ‘My name is’ + ‘Your name’ к UpperCase (все буквы большие);
 // –– учимся гуглить, на сайте https://developer.mozilla.org/ находим метод объекта String,
 // который удаляет лишние пробелы из строки ‘     I love study JS on Smartians platform    ’.
-console.log(‘My name is’ + ‘Your name’.toUpperCase());
-console.log(‘     I love study JS on Smartians platform    ’.trim());
+console.log('My name is ' + 'Your name'.toUpperCase());
+console.log('     I love study JS on Smartians platform    '.trim());
 /* Или так?
 var orig = ‘     I love study JS on Smartians platform    ’;
 console.log(orig.trim());
@@ -68,32 +68,34 @@ console.log(orig.trim());
 // –– вывести на экран случайное число от 0 до 200
 // –– найдите подходящий метод у объекта Math, который вернет наименьшее целое число, большее или равное полученному выше числу.
 // –– с помощью совйства у объекта Number, проверте что ваше полученное число –– целое.
-console.log(Math.random()*200);
-console.log(Math.floor(Math.random()*200));
-console.log(Number.isInteger(Math.floor(Math.random()*200)));
+let number = Math.random()*200;
+let method = Math.ceil;
+console.log(number);
+console.log(method(number));
+console.log(Number.isInteger(method(number)));
 
 // Задание к уроку 1.2.2.
 // –– Объявите переменную myFood со значением 'sushi';
 // –– Объявите переменную numOfRollSlices со значением 6;
 // –– Полученные значения выведите в консоль.
 let myFood = 'sushi';
-let numofRollSlices = 6;
-console.log(numofRollSlices '+'myFood);
+let numOfRollSlices = 6;
+console.log(numOfRollSlices(myFood));
 
 // Задание к уроку 1.2.3.
 // –– Объявите переменную let с именем iKnowJs и присвойте значение false;
 // –– Выведите значение в консоль
 // –– Затем присвойте переменной значение true и снова выведите в консоль.
-const iKnowJs = false;
+let iKnowJs = false;
 concole.log(iKnowJs);
-let iKnowJs = true;
+let iKnowJs = false;
 concole.log(iKnowJs);
 
 // Задание к уроку 1.2.4.
 // –– объявите константу myName и присвойте ей значение с вашим именем;
 // –– переприсвоить значение константы и посмотреть в консоль. Должна быть ошибка (TypeError: Assignment to constant variable.).
-const myName = Vitalii;
-let Vitalii = (TypeError: Assignment to constant variable.);
+const myName = 'Vitalii';
+myName = 'Viktor';
 console.log(myName);
 
 // Задание к уроку 1.2.5
@@ -104,11 +106,10 @@ let multiplyMe = 32; // умножь на 3
 let quarterMe = 1152; // раздели на 3
 
 // Используйте сокращенные математические операторы ниже
-
-
-
-
-
+plusMe += 10;
+subTrackMe -= 100;
+multiplyMe *= 3;
+quarterMe /= 3;
 
 // Проверь результат ниже
 console.log('The value of levelUp:', plusMe);
