@@ -11,6 +11,8 @@ function min(x, y) {
 function min(x, y) {
     return x < y ? x : y;
 }
+// Вариант №3
+var min = (x, y) => {return x < y ? x : y; }
 
 // Напиши функцию-счётчик, которая считает свои вызовы и возвращает их текущее число.
 function myCounter() {
