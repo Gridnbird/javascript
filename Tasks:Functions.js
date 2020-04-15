@@ -25,3 +25,10 @@ let counter = myCounter();
 console.log(counter()); // 1
 console.log(counter()); // 2
 console.log(counter()); // 3
+
+//with arrow function
+var myCounter = (() => {var count = 0; return () => ++count;})();
+console.log(myCounter()); // 1
+console.log(myCounter()); // 2
+console.log(myCounter()); // 3
+
