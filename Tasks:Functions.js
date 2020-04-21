@@ -34,4 +34,3 @@ var myCounter = (() => {
 console.log(myCounter()); // 1
 console.log(myCounter()); // 2
 console.log(myCounter()); // 3
-
