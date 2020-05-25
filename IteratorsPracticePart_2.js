@@ -1,7 +1,7 @@
 // 7. Дан массив с числами. Оставь в нем только четные числа.
 const numbers7 = [2, 5, 10, 15, 21];
-const evenNumbers = numbers7.filter(even);
-function even(number) {
+const evenNumbers = numbers7.filter(isEven);
+function isEven(number) {
     return number % 2 == 0;
 };
 // 8. Дан массив со строками. Оставь в нем только те строки, длина которых больше 5-ти символов.
@@ -12,8 +12,8 @@ function five(string) {
 }
 // 9. Дан массив, в нем могут быть обычные элементы и подмассивы, например [1, 2, [3, 4], 5, [6, 7]]. Оставь в нем только подмассивы.
 const numbersArray = [1, 2, [3, 4], 5, [6, 7]];
-let underArray = numbersArray.filter(block);
-function block(numbers) {
+let underArray = numbersArray.filter(isArray);
+function isArray(numbers) {
     return Array.isArray(numbers);
 };
 // 10. Дан массив с числами. Посчитай количество отрицательных чисел в этом массиве.
