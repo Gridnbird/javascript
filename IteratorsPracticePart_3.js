@@ -1,10 +1,9 @@
 // 12. Дан массив с числами. Найди сумму первых N элементов до первого нуля. Пример: [1, 2, 3, 0, 4, 5, 6]
 // - суммируем первые 3 элемента, так как дальше стоит элемент с числом 0.
 const numbers12 = [1, 2, 3, 0, 4, 5, 6];
-let sumOfFirstThreeNumbers = 0;
-let result1 = numbers12.reduce((x, y) => {
-    if (y == 0) {
-        sumOfFirstThreeNumbers = x;
+let sumBeforeFirstZero = numbers12.reduce((x, y) => {
+    if (y === 0) {
+        console.log(x);
     } else {
         return x + y;
     }
@@ -12,10 +11,9 @@ let result1 = numbers12.reduce((x, y) => {
 // 13. Дан массив с числами. Найди сумму последних N элементов до первого нуля с конца.
 // Пример: [1, 2, 3, 0, 4, 5, 6] - суммируем последние 3 элемента, так как дальше стоит элемент с числом 0.
 const numbers13 = [1, 2, 3, 0, 4, 5, 6];
-let sumOfLastThreeNumbers = 0;
-let result2 = numbers13.reduceRight((x, y) => {
-    if (y == 0) {
-        sumOfLastThreeNumbers = x;
+let sumBeforeFirstZeroReverseOrder = numbers13.reduceRight((x, y) => {
+    if (y === 0) {
+        console.log(x);
     } else {
         return x + y;
     }
