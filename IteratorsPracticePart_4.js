@@ -14,11 +14,8 @@ let quantity = numbers15.reduceRight((x, y) => {
 // 16. Дан массив с числами. Оставь в нем только положительные числа.
 // Затем извлеките квадратный корень из этих чисел.
 let numbers16 = [1, 0, 16, -14, -5, 9];
-let filter = numbers16.filter((number) => {
-    return number > 0;
-});
+let filter = numbers16.filter(number => number > 0)
 console.log(filter);
-let SquareRoot = filter.map((number) => {
-    return Math.sqrt(number);
-});
+let SquareRoot = filter.map(number => Math.sqrt(number));
 console.log(SquareRoot);
+
